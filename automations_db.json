@@ -1,0 +1,31 @@
+{
+  "automations": [
+    {
+      "id": 1,
+      "question": "How to check system disk usage?",
+      "script": "\nimport shutil\ntotal, used, free = shutil.disk_usage('/')\nresult = {\n    'total': total // (2**30),\n    'used': used // (2**30),\n    'free': free // (2**30)\n}\n        ",
+      "script_type": "python",
+      "tags": [
+        "system",
+        "disk",
+        "monitoring"
+      ],
+      "created_at": "2025-02-25T11:26:40.599162",
+      "created_by": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSIsImV4cCI6MTc0MDU4NzIwMH0.JXGL124n_G1CCC7qKIV0nKqyaoNr4a3_o0iezPDvc2o",
+      "times_used": 1,
+      "version": 1,
+      "script_hash": "29c35d520518657a75280443076aacdded615428b40cc5bac459b9efd9af80e7"
+    }
+  ],
+  "versions": {
+    "1": [
+      {
+        "version": 1,
+        "script": "\nimport shutil\ntotal, used, free = shutil.disk_usage('/')\nresult = {\n    'total': total // (2**30),\n    'used': used // (2**30),\n    'free': free // (2**30)\n}\n        ",
+        "script_hash": "29c35d520518657a75280443076aacdded615428b40cc5bac459b9efd9af80e7",
+        "modified_at": "2025-02-25T11:26:40.599177",
+        "modified_by": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSIsImV4cCI6MTc0MDU4NzIwMH0.JXGL124n_G1CCC7qKIV0nKqyaoNr4a3_o0iezPDvc2o"
+      }
+    ]
+  }
+}
